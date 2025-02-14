@@ -1,0 +1,336 @@
+/* 
+========================================
+    RESET GENERAL
+========================================
+*/
+
+/* 
+   - Elimina los márgenes y rellenos predeterminados de todos los elementos.
+   - Utiliza `box-sizing: border-box` para que el padding y el borde no afecten el ancho total del elemento.
+   - Aplica una fuente predeterminada (Arial o sans-serif). 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 
+========================================
+    ESTILO GENERAL DEL CUERPO
+========================================
+*/
+
+/* 
+   - Establece un fondo gris claro para el cuerpo.
+   - Define el color del texto en un tono oscuro para mejor legibilidad.
+   - Configura el espaciado entre líneas para mejorar la lectura del contenido.
+*/
+body {
+    background-color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display:flex;
+    justify-content: space- between;
+    align-items: center;
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    padding: 20px;
+
+}
+
+.izquierda {
+    flex: 1; /* Ocupa el espacio izquierdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position:static; /* Fija la imagen en la pantalla */
+    top: 0;
+    left: 0;
+    width: 40vw; /* Ocupa la mitad izquierda de la pantalla */
+    height: 50vh; /* Ocupa toda la altura */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+
+.derecha {
+    flex: 1.5; /* Ocupa más espacio que la izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo a la izquierda dentro de la columna */
+    text-align: left;
+    padding: 20px;
+}
+
+/* Letra 1*/
+.title1{
+    padding-top: 3px;
+    font-size: 70px; /* Tamaño del texto */
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title2 {
+   font-size: 40px;
+   color: #ffffff
+}
+
+/*
+______________________________________
+boton google
+__________________________________
+*/
+.botong {
+    display: flex;  /* Usa flexbox para organizar el contenido */
+    justify-content: center;  /* Centra el botón horizontalmente */
+    margin-top: 20px;  /* Espacio superior */
+}
+.boton1 {
+    display: flex;  /* Hace que la imagen y el texto estén en la misma línea */
+    flex-direction: row-reverse; /*cambia la imagen*/
+    background-color: white;  /* Color de fondo */
+    align-items: center;  /* Alinea la imagen y el texto verticalmente */
+    color: black;  /* Color del texto */
+    padding: 10px 20px;  /* Espaciado interno (arriba/abajo: 10px, izquierda/derecha: 20px) */
+    border-radius: 40px;  /* Bordes redondeados */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    font-size: 16px;  /* Tamaño del texto */
+    border: 2px solid #ccc;  /* Borde gris */
+    transition: 0.3s;  /* Efecto suave en los cambios */
+    width: 300px;
+}
+.boton1:hover {
+    background-color: #a4a4a4;  /* Cambia el color de fondo*/
+}
+
+
+.icono-imgoogle {
+    width: 24px;  /* Ancho de la imagen */
+    height: auto;  /* Ajusta la altura automáticamente */
+    margin-left: 0px;  /* Espacio entre el texto y la imagen */
+    margin-right: 13px;  /* Elimina cualquier margen derecho */
+}
+
+.boton-texto1 {
+    font-weight: bold;  /* Hace que el texto sea más grueso */
+    }
+
+/*
+______________________________________
+boton apple
+__________________________________
+*/
+
+.botona {
+    display: flex;  /* Usa flexbox para organizar el contenido */
+    justify-content: center;  /* Centra el botón horizontalmente */
+    margin-top: 20px;  /* Espacio superior */
+}
+.boton2 {
+    display: flex;  /* Hace que la imagen y el texto estén en la misma línea */
+    align-items: center;  /* Alinea la imagen y el texto verticalmente */
+    background-color: white;  /* Color de fondo */
+    color: black;  /* Color del texto */
+    padding: 10px 20px;  /* Espaciado interno (arriba/abajo: 10px, izquierda/derecha: 20px) */
+    border-radius: 40px;  /* Bordes redondeados */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    font-size: 16px;  /* Tamaño del texto */
+    border: 2px solid #ccc;  /* Borde gris */
+    transition: 0.3s;  /* Efecto suave en los cambios */
+    width: 300px; /* Ajusta el ancho a tu preferencia */
+
+}
+.boton2:hover {
+    background-color: #a8a8a8;  /* Cambia el color de fondo*/
+}
+
+
+.icono-imgapple {
+    width: 24px;  /* Ancho de la imagen */
+    height: auto;  /* Ajusta la altura automáticamente */
+    margin-left: 10px;  /* Espacio entre el texto y la imagen */
+    margin-right: 0;  /* Elimina cualquier margen derecho */
+}
+
+.boton-texto2 {
+    font-weight: bold;  /* Hace que el texto sea más grueso */
+    }
+
+/* 
+========================================
+ Separador
+========================================
+*/
+.separador {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separador .linea{
+    border-top: 1px solid #ffffff;
+    width: 45%;
+}
+.separador .texto {
+margin:0 50px;
+color: aliceblue;
+}
+
+/* 
+========================================
+    botóncrear cuenta
+========================================
+*/
+.botonc {
+    display: flex;  /* Usa flexbox para organizar el contenido */
+    justify-content: center;  /* Centra el botón horizontalmente */
+    margin-top: 20px;  /* Espacio superior */
+}
+
+.botoncrearc {
+    display: flex;  /* Hace que la imagen y el texto estén en la misma línea */
+    text-align: center;  /* el texto verticalmente */
+    background-color: rgb(60, 171, 245);  /* Color de fondo */
+    color: rgb(255, 255, 255);  /* Color del texto */
+    padding: 10px 20px;  /* Espaciado interno (arriba/abajo: 10px, izquierda/derecha: 20px) */
+    border-radius: 40px;  /* Bordes redondeados */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    font-size: 16px;  /* Tamaño del texto */
+    border: 2px solid #159bd5;  /* Borde gris */
+    transition: 0.3s;  /* Efecto suave en los cambios */
+    width: 300px;
+}
+.botoncrearc:hover { 
+    background-color: #45479f;  /* Cambia el color de fondo*/
+ }
+
+/* 
+========================================
+    Párrafo de terminos y condiciones 
+========================================
+*/
+ p {
+    color: #949494;
+    line-height: 20px;
+    font-size: 13px;
+}
+.parrafo{
+    color: #159bd5;
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    
+}
+
+h1{
+    color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px ;
+    margin-top: 38px; /* Espacio encima del párrafo */
+}
+
+/*/Botón iniciar sesión/*/
+
+.botont {
+    display: flex;  /* Usa flexbox para organizar el contenido */
+    justify-content: center;  /* Centra el botón horizontalmente */
+    margin-top: 20px;  /* Espacio superior */
+}
+
+.botoniniciar {
+    display: flex;  /* Hace que la imagen y el texto estén en la misma línea */
+    text-align: center;  /* Alinea la imagen y el texto verticalmente */
+    background-color: rgba(255, 255, 255, 0);  /* Color de fondo */
+    color: rgb(32, 126, 189);  /* Color del texto */
+    padding: 10px 20px;  /* Espaciado interno (arriba/abajo: 10px, izquierda/derecha: 20px) */
+    border-radius: 40px;  /* Bordes redondeados */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    font-size: 16px;  /* Tamaño del texto */
+    border: 1px solid #929495;  /* Borde gris */
+    transition: 0.3s;  /* Efecto suave en los cambios */
+    width: 300px;
+
+}
+.botoniniciar:hover { 
+    background-color: #2f32ff19;  /* Cambia el color de fondo*/
+ }
+
+
+
+
+
+
+
+
+/* 
+========================================
+    PIE DE PÁGINA (FOOTER)
+========================================
+*/
+
+/* 
+   - Aplica un fondo oscuro y texto en color blanco.
+   - Centra el texto y agrega un relleno vertical.
+   - Separa visualmente el pie de página del contenido principal.
+*/
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 70px;
+}
+
+/* 
+========================================
+    NAVEGACIÓN
+========================================
+*/
+/* 
+   - Elimina los estilos predeterminados de la lista (puntos).
+   - Quita el relleno interno del `<ul>`. 
+*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* 
+   - Muestra los elementos del menú en línea (horizontalmente).
+   - Agrega un margen entre los elementos para separarlos. 
+*/
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* 
+   - Establece el color blanco para los enlaces del menú.
+   - Elimina el subrayado predeterminado.
+   - Aplica negrita para destacar los enlaces.
+   - Agrega una transición suave al cambiar el color en el hover.
+*/
+nav ul li a {
+    color: rgb(97, 95, 95);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 
+   - Cambia el color del enlace cuando el usuario pasa el cursor sobre él.
+*/
+nav ul li a:hover {
+    color: #d6d6d6;
+}
+
